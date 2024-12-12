@@ -22,7 +22,15 @@
     <button onclick="scanInput()">Scan</button>
     <h3>Output:</h3>
     <pre id="output"></pre>
-
+    <h3>Token Types:</h3>
+    <ul>
+        <li>Algebra Operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>=</code></li>
+        <li>Relational Operators: <code>!=</code>, <code>></code>, <code><</code>, <code>>=</code>, <code><=</code></li>
+        <li>Assignment Operators: <code>=</code></li>
+        <li>Separators: <code>;</code>, <code>,</code>, <code>(</code>, <code>)</code>, <code>{</code>, <code>}</code>, <code>[</code>, <code>]</code></li>
+        <li>Identifiers: <code>letter (letter | digit)*</code></li>
+        <li>Integers: <code>digit+</code></li>
+    </ul>
     <script>
         class Scanner {
             constructor() {
